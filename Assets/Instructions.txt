@@ -1,0 +1,21 @@
+FONTS
+
+	The website uses Gabarito as the font. Download the Regular 400 style here: https://fonts.google.com/specimen/Gabarito
+
+
+IMAGES/ASSETS
+
+	I upscaled all of the necessary assets and made them available as their own file. Quality should not be an issue - just make sure that
+	everything is its correct size.
+
+	I would really like it if you could try to make the website look as close to the prototype image as possible. This means matching the
+	font size exactly, lining up images/banners exactly, etc.
+		I included the prototype image in this folder
+
+
+Please let me know if the purpose of any of the images are unclear.
+
+Note: The prototype I sent you through discord is a bit more finalized than the prototype I am including in this folder. That is because there
+are a few things George and Davis need to tell me before I can complete the UI.
+
+I will also spend some time making the UI for the Research, FAQ, Our Team, and Contact Us Sections. I will send a similar folder when I get those done.
