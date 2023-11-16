@@ -11,6 +11,7 @@
     <div class="container-one">
         <div class="navigation-container">
             <div class="home-page-logo">
+                <img src="./Assets/Logo.png" alt="">
                 <h1>ScanAI</h1>
             </div>
             <div class="home-page-nav-bar">
@@ -36,25 +37,19 @@
         <!-- Home Content Container -->
         <div class="home-content-container">
 
-            <div class="drag-file-container">
-                <!-- Drag and Drop Area -->
-                
-                <div id="drop-area" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
-                    <img src="./Assets/CloudIcon.png" alt="">
-                    <p>Drag a file here</p>
-                    <p>Permitted file types: .dicom, .jpeg, .png</p>
-                </div>
-                
-            </div>
-            <!-- Additional Information and Background -->
             <div class="upload-file-more-info">
                 <p>Our Machine Learning Model will look for medical problems such as fractures, scoliosis, and dysphagia</p>
-                <button id="more-info-button" onclick="test()">More Info</button>
             </div>
-            <div class="rectangle-image"></div>
-            <div>Note: ScanAI will occasionally make errors. We are always refining our model to find new ways to improve.</div>
-            <button id="scan-button" class="home-page-scan-button">SCAN</button>
 
+            <div class="hero">
+                <div class="card">
+                    <h1>Upload an MRI</h1> <!-- Heading within the card -->
+                    <img src="./Assets/DragFileIMG.png"> <!-- Placeholder image source -->
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file"> <!-- File input for selecting images -->
+                </div>
+            </div>
+            <label class="scan-button" for="input-file">Add file</label> <!-- Label for the file input -->
+            <img class="scan-button-two" src="./Assets/Button.png" alt="">
             
         </div>
     </div>

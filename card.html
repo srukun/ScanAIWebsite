@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Setting the viewport for responsiveness -->
+    <title>ScanAI Upload Image Test</title> <!-- Title of the HTML document -->
+    <link rel="stylesheet" href="style.css"> <!-- Linking an external stylesheet named "style.css" -->
+</head>
+<body>
+
+    <div class="hero">
+        <div class="card">
+            <h1>Upload an MRI</h1> <!-- Heading within the card -->
+            <img src="UploadImage.png"> <!-- Placeholder image source -->
+            <label for="input-file">Add file</label> <!-- Label for the file input -->
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file"> <!-- File input for selecting images -->
+        </div>
+    </div>
+
+    <script> // JavaScript
+
+        let profilePic = document.querySelector(".card img"); // Selecting the image element within the card
+        let inputFile = document.getElementById("input-file"); // Getting the file input element by its ID
+
+        inputFile.onchange = function(){
+            profilePic.src = URL.createObjectURL(inputFile.files[0]); // Changing the source of the image to the selected file
+            // TODO: send the image to the model. This will be simple and we will work on this as a team
+        }
+
+    </script>
+
+</body>
+</html>
